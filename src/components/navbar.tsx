@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Ambulance, Calendar } from "lucide-react";
 import Image from "next/image";
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

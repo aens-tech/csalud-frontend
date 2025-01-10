@@ -33,6 +33,7 @@ export default function Hero() {
                 <p className="mt-4 text-base text-black sm:text-lg md:text-xl">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate delectus veritatis perspiciatis, alias mollitia, quaerat numquam aliquam eos provident harum magnam dicta nostrum ipsam similique quibusdam, at neque laboriosam iusto..
                 </p>
+
               </div>
 
               {/* Imagen */}
