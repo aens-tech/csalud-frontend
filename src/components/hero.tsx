@@ -18,45 +18,30 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative bg-white h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
-          <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
+    <div className="relative bg-gradient-to-b h-[87vh] from-white via-[#E8F8FF] to-[#15B5FC]">
+      {/* Contenedor principal */}
+      <div className="h-full max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="relative h-full flex flex-col">
+          {/* Contenido de texto */}
+          <div className="mt-5 mx-auto w-full px-4 sm:mt-24 sm:px-6 lg:mt-32">
             <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-              {/* Contenido del lado izquierdo */}
+              {/* Lado izquierdo */}
               <div className="sm:text-center lg:text-left lg:col-span-6">
-                <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                  <span className="block">Agenda tu cita</span>
-                  <span className="block text-blue-600 mt-1">
-                    médica en línea
-                  </span>
+                <h1 className="text-4xl tracking-tight text-primary font-extrabold sm:text-4xl md:text-6xl">
+                  <span className="flex">Mira nuestros nuevos beneficios para los miembros</span>
                 </h1>
-                <p className="mt-6 text-base text-gray-500 sm:text-lg md:text-xl">
-                  Fácil, rápido y seguro. Agenda tu cita médica en línea con
-                  solo unos clics. Nuestra plataforma le conecta con los mejores
-                  profesionales de la salud.
+                <p className="mt-4 text-base text-black sm:text-lg md:text-xl">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate delectus veritatis perspiciatis, alias mollitia, quaerat numquam aliquam eos provident harum magnam dicta nostrum ipsam similique quibusdam, at neque laboriosam iusto..
                 </p>
-                <div className="mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <div>
-                    <a
-                      onClick={handleAppointment}
-                      className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
-                    >
-                      Agenda tu cita ahora mismo
-                    </a>
-                  </div>
-                </div>
               </div>
 
-              {/* Contenido del lado derecho - Imagen */}
-              <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-                <div className="relative mx-auto w-full rounded-lg lg:max-w-md">
-                  <img
-                    className="w-full h-64 sm:h-72 md:h-80 lg:h-96 object-cover rounded-lg"
-                    src="/images/hero.png"
-                    alt="Medical professionals"
-                  />
-                </div>
+              {/* Imagen */}
+              <div className="lg:col-span-6 flex justify-center items-end absolute bottom-0 left-1/2 transform -translate-x-1/2 lg:relative lg:left-0 lg:transform-none">
+                <img
+                  className="w-full h-auto max-h-[40vh] sm:max-h-[50vh] md:max-h-[60vh] object-contain"
+                  src="/images/heros.png"
+                  alt="Medical professionals"
+                />
               </div>
             </div>
           </div>
