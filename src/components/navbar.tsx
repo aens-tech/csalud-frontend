@@ -59,12 +59,13 @@ const Navbar = () => {
               <div className="absolute mt-2 bg-white rounded-lg shadow-lg border border-gray-200 z-50 w-36">
                 <div className="space-y-2 py-2 px-3">
                   <button className="w-full bg-blue-800 text-white rounded-lg py-2 px-3 flex items-center space-x-3 hover:bg-blue-800 transition-all">
-                    <Ambulance size={18} />
-                    <span className="text-sm">Llamar ambulancia</span>
+                    <Ambulance size={14} />
+                    <span className="text-[10px]">Llamar ambulancia</span>
                   </button>
+
                   <button className="w-full bg-white text-gray-700 rounded-lg py-2 px-3 flex items-center space-x-3 hover:bg-blue-800 hover:text-white transition-all border border-gray-200">
-                    <Calendar size={18} />
-                    <span className="text-sm">Citas</span>
+                    <Calendar size={14} />
+                    <span className="text-[10px]">Citas</span>
                   </button>
                 </div>
               </div>
