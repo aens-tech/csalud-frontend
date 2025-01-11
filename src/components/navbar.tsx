@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Ambulance, Calendar } from "lucide-react";
 import Image from "next/image";
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,8 +28,8 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`${isOpen
-                ? "bg-white text-blue-800 border border-blue-800"
-                : "bg-blue-800 text-white"
+                ? "bg-white text-primary border border-primary"
+                : "bg-primary text-white"
                 } px-4 py-2 rounded-full transition-colors flex items-center justify-center text-sm font-medium w-36`}
             >
               <span className="font-bold">Emergencia</span>
@@ -55,17 +54,16 @@ const Navbar = () => {
 
             {/* Dropdown Menu */}
             {isOpen && (
-              <div
-                className="absolute mt-2 bg-white rounded-lg shadow-lg border border-gray-200 z-50 w-36"
-              >
+              <div className="absolute mt-2 bg-white rounded-lg shadow-lg border border-gray-200 z-50 w-36">
                 <div className="space-y-2 py-2 px-3">
-                  <button className="w-full bg-blue-800 text-white rounded-lg py-2 px-3 flex items-center space-x-3 hover:bg-blue-800 transition-all">
-                    <Ambulance size={18} />
-                    <span className="text-sm">Llamar ambulancia</span>
+                  <button className="w-full bg-primary text-white rounded-lg py-2 px-3 flex items-center space-x-3 hover:bg-primary transition-all">
+                    <Ambulance size={14} />
+                    <span className="text-[10px]">Llamar ambulancia</span>
                   </button>
-                  <button className="w-full bg-white text-gray-700 rounded-lg py-2 px-3 flex items-center space-x-3 hover:bg-blue-800 hover:text-white transition-all border border-gray-200">
-                    <Calendar size={18} />
-                    <span className="text-sm">Citas</span>
+
+                  <button className="w-full bg-white text-gray-700 rounded-lg py-2 px-3 flex items-center space-x-3 hover:bg-primary hover:text-white transition-all border border-gray-200">
+                    <Calendar size={14} />
+                    <span className="text-[10px]">Citas</span>
                   </button>
                 </div>
               </div>

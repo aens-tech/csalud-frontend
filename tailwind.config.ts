@@ -1,3 +1,4 @@
+import { se } from "date-fns/locale";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -10,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#0C0CAA",
+        secondary: "#73D3FD",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
