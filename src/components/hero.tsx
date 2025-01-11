@@ -3,7 +3,8 @@ import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 import Showmygallery from "../components/ImageGallery";
 import CardHero from "./card";
-
+import Image from "next/image";
+import { Showgallery2 } from "../components/ImageGallery";
 
 
 export default function Hero() {
@@ -94,7 +95,7 @@ export default function Hero() {
             </div>
             {/* Botón azul en la siguiente línea */}
             <button
-              onClick={() => console.log("Botón 3")}
+              onClick={handleAppointment}
               className="w-full px-4 py-3 bg-primary text-white font-medium text-base rounded-2xl hover:bg-blue-700 transition-colors"
             >
               Siguiente
@@ -137,6 +138,55 @@ export default function Hero() {
         </div>
       </div>
 
+      <section className="h-[170vh] relative bg-white">
+        <div>
+          <h1 className="text-4xl font-extrabold text-primary mt-20 mx-7">Aliados</h1>
+          <div className="flex justify-center items-center space-x-4 mt-10 mb-10">
+            <Image
+              src="/images/IPS.png"
+              alt="IPS"
+              width={154}
+              height={57}
+            />
+            <Image
+
+              src="/images/Uronorte.png"
+              alt="Uronorte"
+              width={154}
+              height={28}
+            />
+          </div>
+          <div className="mt-32">
+            <div className="relative w-[327px] h-[393px] mx-6">
+              {/* Rectángulo principal */}
+              <div className="absolute inset-0 w-[327px] h-[300px] bg-blue-200 rounded-2xl"></div>
+
+              {/* Rectángulo largo hacia la derecha, sobresaliendo arriba */}
+              <div className="absolute top-[-50px] right-0 w-[180px] h-[393px] bg-blue-200 rounded-2xl"></div>
+
+              {/* Imagen centrada encima */}
+              <div className="absolute -top-10">
+                <Showgallery2>
+
+                </Showgallery2>
+              </div>
+            </div>
+
+            <div className="absolute bottom-[30px] w-full flex justify-center items-center">
+              <div className="shadow-xl">
+                <CardHero
+                  title="Servicios Especiales"
+                  description="Lorem ipsum dolor sit amet."
+                  buttonText="Ingresar"
+                  imageSrc="/images/card1fix.png"
+                  reverse={true}
+                />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
     </div>
   );

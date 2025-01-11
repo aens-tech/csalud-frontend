@@ -3,69 +3,85 @@ import { Heart } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-primary text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Logo and Social Media */}
           <div>
             <div className="flex items-center">
-              <Heart className="h-8 w-8 text-sky-500" />
-              <span className="ml-2 text-2xl font-bold text-sky-500">
-                CSalud
-              </span>
+              <span className="text-2xl font-bold">3 ThreeSalud</span>
             </div>
-            <p className="mt-4 text-gray-400">
-              Conectando pacientes con profesionales de la salud para mejorar la
-              calidad de vida.
-            </p>
+            <div className="mt-4 flex gap-4">
+              <a href="#" className="text-white hover:text-gray-200">
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a href="#" className="text-white hover:text-gray-200">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="#" className="text-white hover:text-gray-200">
+                <i className="fab fa-youtube"></i>
+              </a>
+            </div>
           </div>
+
+          {/* Compañía */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Enlaces rapidos</h3>
+            <h3 className="text-lg font-bold mb-4">Compañía</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-sky-500">
-                  Encontrar profesionales
+                <a href="#" className="text-white hover:text-gray-200">
+                  Inicio
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-sky-500">
-                  Opiniones
+                <a href="#" className="text-white hover:text-gray-200">
+                  ¿Quiénes Somos?
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:text-gray-200">
+                  Planes
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:text-gray-200">
+                  Contacto
                 </a>
               </li>
             </ul>
           </div>
+
+          {/* Legal */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Para profesionales</h3>
+            <h3 className="text-lg font-bold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-sky-500">
-                  Ingresar como profesional
+                <a href="#" className="text-white hover:text-gray-200">
+                  Términos y servicios
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-sky-500">
-                  Panel del profesional
+                <a href="#" className="text-white hover:text-gray-200">
+                  Privacidad y políticas
                 </a>
               </li>
-              {/* <li>
-                <a href="#" className="text-gray-400 hover:text-sky-500">
-                  Recursos
-                </a>
-              </li> */}
             </ul>
           </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contacto</h3>
+
+          {/* Contacto */}
+          <div className="md:col-span-3">
+            <h3 className="text-lg font-bold mb-4">Contacto</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400">support@csalud.com</li>
-              <li className="text-gray-400">31688383743</li>
+              <li className="text-white">Info@gmail.com</li>
+              <li className="text-white">Cúcuta, Colombia</li>
             </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>
-            &copy; {new Date().getFullYear()} CSalud. Todos los derechos
-            reservados.
-          </p>
+
+        {/* Copyright with lines */}
+        <div className="mt-8 pt-8 text-center relative">
+          <div className="absolute left-0 right-0 top-1/2 h-px bg-white/20"></div>
+          <span className="relative bg-primary px-4">AENS TECH ©2023</span>
         </div>
       </div>
     </footer>

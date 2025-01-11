@@ -38,13 +38,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <Hero></Hero>
 
-      {/* Features Section */}
-      <Features></Features>
 
-      {/* Reviews Section */}
-      <Reviews></Reviews>
-
-      <Footer></Footer>
     </div>
   );
 }
